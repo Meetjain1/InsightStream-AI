@@ -1,4 +1,4 @@
-# SQL Utils Enhancement - Quick Reference Guide
+# SQL Utils - Quick Reference Guide
 
 ## Implementation Checklist
 
