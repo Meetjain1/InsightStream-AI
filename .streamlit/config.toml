@@ -1,0 +1,14 @@
+# Streamlit configuration
+[theme]
+primaryColor = "#FF6B6B"  # Vibrant red for primary actions
+backgroundColor = "#F5F5F5"  # Light gray background
+secondaryBackgroundColor = "#FFFFFF"  # White for cards/sections
+textColor = "#31333F"  # Dark gray text
+font = "sans serif"
+
+[server]
+enableCORS = false
+enableXsrfProtection = true
+
+[browser]
+gatherUsageStats = false
