@@ -148,7 +148,7 @@ InsightStream-AI/
 │   └── encoders_scalers/
 │       ├── num_scaler.pkl
 │       └── ohe_encoder.pkl
-├── bob_sessions/                       # IBM Bob development session logs
+├── bob_sessions/                       # IBM Bob implementation and planning session logs
 │   ├── bob_task_may-16-2026_6-15-33-pm.md
 │   ├── bob_task_may-16-2026_6-15-33-pm.png
 │   ├── bob_task_may-16-2026_7-03-53-pm.md
@@ -167,7 +167,7 @@ InsightStream-AI/
 │   ├── bob_task_may-16-2026_9-07-05-pm.md
 │   └── bob_task_may-16-2026_9-07-05-pm.png
 └── tests/
-    └── smoke_tests.py                  # Basic smoke tests
+    └── smoke_tests.py                  # Smoke tests
 ```
 
 ## Analysis Methods Made Simple
