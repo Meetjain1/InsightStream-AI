@@ -34,6 +34,7 @@ from src.helpers import (
     NUMERIC_COLS, CATEGORICAL_COLS, BINARY_COLS, TARGET_COL, ID_COL
 )
 from src.data_prep import prepare_data_for_analysis
+from src.sidebar_utils import render_quick_start_guide
 
 # Set page config
 st.set_page_config(
@@ -45,6 +46,8 @@ st.set_page_config(
 # Initialize session state if not exists
 if 'data' not in st.session_state:
     st.session_state.data = None
+
+render_quick_start_guide()
 
 # Page title and description
 st.title("Business Insights Gold Mine!")

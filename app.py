@@ -28,6 +28,7 @@ from src.helpers import (
 )
 from src.data_prep import load_csv, prepare_data_for_analysis
 from src.sql_utils import create_db_and_table, upsert_clean_data
+from src.sidebar_utils import render_quick_start_guide
 
 # Set page config
 st.set_page_config(
@@ -135,17 +136,9 @@ with st.sidebar:
                 else:
                     st.error("Failed to save to database")
     
-    # Help text
     st.markdown("---")
-    st.subheader("Quick Start Guide")
-    st.markdown("""
-    1. Load our awesome sample data or upload your own
-    2. Dive into dazzling visualizations
-    3. Run powerful SQL queries (no tech skills needed!)
-    4. Group customers and discover hidden patterns
-    5. Get brilliant ideas to boost your business
-    """)
-    
+    render_quick_start_guide(in_sidebar=True)
+
     # App info
     st.markdown("---")
     st.caption("Customer Insight Revolution | v2.0.0")

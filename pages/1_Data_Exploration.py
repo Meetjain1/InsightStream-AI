@@ -27,6 +27,7 @@ from src.helpers import (
 from src.data_prep import load_csv, basic_clean, handle_missing
 from src.eda_utils import create_eda_plots
 from src.sql_utils import run_sql, get_churn_sql_queries
+from src.sidebar_utils import render_quick_start_guide
 
 # Set page config
 st.set_page_config(
@@ -44,6 +45,8 @@ if 'data' not in st.session_state:
 
 if 'db_created' not in st.session_state:
     st.session_state.db_created = os.path.exists(DB_PATH)
+
+render_quick_start_guide()
 
 # Page title
 st.title("� Data Exploration")

@@ -24,6 +24,7 @@ from src.helpers import (
     calculate_rfm_score
 )
 from src.data_prep import prepare_data_for_analysis
+from src.sidebar_utils import render_quick_start_guide
 
 # Set page config
 st.set_page_config(
@@ -35,6 +36,8 @@ st.set_page_config(
 # Initialize session state if not exists
 if 'data' not in st.session_state:
     st.session_state.data = None
+
+render_quick_start_guide()
 
 # Page title
 st.title("Discover Your Customer Groups!")

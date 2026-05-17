@@ -32,6 +32,7 @@ from src.helpers import (
 )
 from src.data_prep import prepare_data_for_analysis
 from src.sql_utils import run_sql
+from src.sidebar_utils import render_quick_start_guide
 
 # Set page config
 st.set_page_config(
@@ -45,6 +46,8 @@ if 'data' not in st.session_state:
     st.session_state.data = None
 if 'data_processed' not in st.session_state:
     st.session_state.data_processed = False
+
+render_quick_start_guide()
 
 # Page title
 st.title("Customer Retention Power Tools!")
